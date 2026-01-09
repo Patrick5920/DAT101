@@ -12,31 +12,79 @@
     <ol>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				[Replace this with you answer]
+Constants should be used for values that do not change during program execution (e.g., tax rates, PI, maximum limits).
+
+Variables are used for values that change (e.g., user input, counters, scores).
+
+They cannot all be constants, because programs usually need to update values as they run. Any value that must change cannot be a constant.
 			</p>
       <li>How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				[Replace this with you answer]
+Parentheses control the order of operations.
+
+Expressions inside parentheses are evaluated first, overriding normal precedence rules (PEMDAS).
 			</p>
       <li>How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				[Replace this with you answer]
+To limit decimal places, use formatting functions (like toFixed(), f-strings, format()) for display to get strings (e.g., "3.14") or mathematical rounding (multiply, round, divide) for numerical results (e.g., 3.14). 
 			</p>
       <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
       <p>
-				[Replace this with you answer]
+Floating-point numbers can have precision errors, so direct comparison (==) is unreliable.
+
+Instead, compare the difference using a small tolerance (epsilon):
+
+If |a - b| < 0.0001, treat them as equal.
+
+So 12.199999 and 12.2 are effectively equal within a tolerance.
 			</p>
       <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				[Replace this with you answer]
+Comparison operators (<, >, ==, !=, <=, >=) return Boolean values:
+
+true or false
+
+We can check them using:
+
+if statements
+
+Boolean expressions
+
+Example:
+
+5 > 3 returns true
 			</p>
       <li>How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				[Replace this with you answer]
+Math.random() generates a pseudo-random number between 0 (inclusive) and 1 (exclusive).
+
+It can be used for:
+
+Dice rolls
+
+Random selections
+
+Games
+
+Simulations
+
+Example:
+
+Random number from 1–10: Math.floor(Math.random() * 10) + 1
 			</p>
       <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				[Replace this with you answer]
+				The modulus operator returns the remainder after division.
+
+Example: 7 % 3 = 1
+
+Common uses:
+
+Checking even or odd numbers
+
+Wrapping values (like clock time)
+
+Repeating patterns (loops, grids)
 			</p>
     </ol>
 		<script type="module" src="./task_2-2.mjs" defer></script>
