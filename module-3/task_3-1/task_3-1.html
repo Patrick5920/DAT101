@@ -11,13 +11,68 @@
     </div>
     <ol>
       <li>Discuss the behavior of part 1, What happens when the wake-up time is not 7 and what happens when it is exactly 7?</li>
-      <p>[Replace this with you answer]</p>
+When wake-up time is NOT 7 (e.g., 6 or 8):
+
+The condition wakeUpTime == 7 is false
+
+Nothing happens (no message is printed)
+
+When wake-up time IS exactly 7:
+
+The condition is true
+
+The message about catching the bus is printed
       <li>Same as question #1. How ever the answer should now be different. Discuss the behavior of part 2, What happens when the wake-up time is not 7 and what happens when it is exactly 7?</li>
-      <p>[Replace this with you answer]</p>
+ When wake-up time is NOT 7 (e.g., 6 or 8):
+
+The if condition is false
+
+The else block runs
+
+Message about taking the car is printed
+
+When wake-up time IS exactly 7:
+
+The if condition is true
+
+Message about taking the bus is printed
       <li>Discuss the behavior of part 3, what happens when wake time is less than 7 or greater than 8?</li>
-      <p>[Replace this with you answer]</p>
+     When wake-up time is less than 7 (e.g., 6):
+
+Neither condition matches
+
+The else case runs → take the car
+
+When wake-up time is greater than 8 (e.g., 9):
+
+Again, neither condition matches
+
+The else case runs → take the car
+
+When wake-up time is exactly 7:
+
+First condition is true → bus
+
+When wake-up time is exactly 8:
+
+Second condition is true → train
       <li>Discuss the behavior for part 4, what happens if the number is exactly 0, is zero positive or negative?</li>
     </ol>
+If the number is greater than 0:
+
+Output: "Positive"
+
+If the number is less than 0:
+
+Output: "Negative"
+
+If the number is exactly 0:
+
+It is neither positive nor negative
+
+If your code only checks > 0 and < 0, nothing prints
+
+Zero must be handled with a separate condition if needed
     <script type="module" src="./task_3-1.mjs" defer></script>
   </body>
 </html>
