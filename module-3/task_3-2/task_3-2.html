@@ -10,8 +10,24 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+    
+
+  <li>1. In part 1, is it possible to solve the problem using a single for loop?</li>
+
+  <p>No, it is not practical to solve this problem using a single for loop. The task requires counting up from 1 to 10 and down from 10 to 1, which need different loop directions and conditions. Using two separate for loops makes the solution clearer and easier to understand.</p>
+
+  <li>2. In part 2, can we create an “infinite” loop within the condition of the while loop?</li>
+
+  <p>Yes, it is possible to create an infinite loop if the condition of the while loop never becomes false. This can happen if the guessed number is not updated inside the loop or if the random number can never match the target value. To prevent this, the guessed number must change on each iteration and the loop condition must eventually be satisfied.</p>
+
+  <li>3. How quickly or slowly can a computer compute this, and how does the program behave while guessing?</li>
+
+  <p>A computer can perform the guessing very quickly, even if many guesses are required, because each operation takes very little time. While the program is guessing, it executes the loop repeatedly and does not perform other tasks at the same time in a single-threaded environment. The program continues running the loop until the correct number is found.</p>
+
+  <li>4. Explain the relationship between rows and columns in nested for loops.</li>
+
+  <p>In nested for loops, the outer loop usually represents the rows and the inner loop represents the columns. For each iteration of the outer loop, the inner loop runs completely. The order of rows and columns can be changed, but doing so affects how the data is processed and displayed.</p>
+     
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
   </body>
