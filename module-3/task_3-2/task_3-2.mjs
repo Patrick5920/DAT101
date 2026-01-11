@@ -112,7 +112,6 @@ for (let row = 1; row <= 7; row++) {
 }
 printOut(textPart5);
 printOut(newLine);
-
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
 printOut(`
 Simulate 5 student grades using the Math.random() function, from 1 to 236 (inclusive).<br>
@@ -213,7 +212,6 @@ if (grade5 >= 89) {
 printOut(textPart6);
 
 let bigOCount = 0; // Count of operations for sorting
-
 //Print out the grades in descending order
 printOut("Grades sorted descending:");
 for (let i = 1; i < students; i++) {
@@ -311,7 +309,6 @@ for (let i = 1; i < students; i++) {
     j++;
   } while (j <= students && !foundHighest);
 }
-
 // Students number is now lost, but grades are sorted
 printOut("Grade #1: " + grade1.toFixed(2) + "%");
 printOut("Grade #2: " + grade2.toFixed(2) + "%");
@@ -321,7 +318,6 @@ printOut("Grade #5: " + grade5.toFixed(2) + "%");
 printOut("");
 printOut(`Big O operations count for sorting: O(n^2) = ${bigOCount}, worst case scenario for bubble sort with ${students} students is 25 operations.`);
 printOut(newLine);
-
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
 printOut(`
@@ -345,7 +341,6 @@ function matchNumber(aN1, aN2, aN3, aN4, aN5, aN6, aNumber) {
   if (aN6 === aNumber) count++;
   return count;
 }
-
 let throws = 0; // Number of throws
 let fullStraight = false; // 1 2 3 4 5 6
 let yahtzee = false; // All the same
