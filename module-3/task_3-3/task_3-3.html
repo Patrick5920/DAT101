@@ -10,8 +10,90 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+    
+     <li> 1. What is the difference between invoking and creating a function?</li>
+ <p>Creating (defining) a function means writing the function code.
+
+
+Invoking (calling) a function means executing it.
+
+
+A function can be created once and invoked many times.</p>
+
+
+
+<li> 2. Explain the syntax regarding semicolons and code blocks</li>
+ <p>Semicolons (;) are used to end individual statements.
+
+
+Code blocks are enclosed in {} and group multiple statements together.
+
+
+Semicolons are not used after code blocks like functions or loops.</p>
+
+
+
+<li> 3. What happens when we try to store values from a function that doesn’t return any?</li>
+ <p>If a function has no return statement, it returns undefined by default.
+
+
+Storing its result will store undefined.
+
+
+This can cause errors if the value is later used in calculations.</p>
+
+
+
+
+<li> 4. How do we separate parameters from each other when creating a function?</li>
+ <p>Parameters are separated by commas.
+
+
+Example: function example(a, b, c)</p>
+
+
+
+<li> 5. How are parameter names related during invocation and creation of a function?</li>
+ <p>Parameter names in the function definition are placeholders.
+
+
+When the function is invoked, the arguments are matched by position, not by name.
+
+
+The names used during invocation do not need to match the parameter names.</p>
+
+
+
+<li> 6. Why is a parameter undefined when a function call is missing a parameter?</li>
+ <p>If an argument is not provided, the parameter has no assigned value.
+
+
+In JavaScript, missing parameters default to undefined.
+
+
+This can lead to unexpected behavior unless default values are used.</p>
+
+
+
+<li> 7. What happens when we use recursive functions?</li>
+ <p>A recursive function calls itself.
+
+
+Each call adds a new frame to the call stack.
+
+
+Recursion must include:
+
+
+A base case (to stop recursion)
+
+
+A recursive case (to continue)
+
+
+Without a base case, recursion leads to stack overflow errors.</p>
+
+     
     </ol>
     <script type="module" src="./task_3-3.mjs" defer></script>
   </body>
