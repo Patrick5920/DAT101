@@ -10,8 +10,71 @@
       <span id="txtOut" style="white-space: nowrap"></span>
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+     
+ <li>1. Why is object-oriented development so important in programming?</li>
+
+<p>Object-oriented development (OOD) is important because it helps programmers organize, structure, and scale their code more effectively. By modeling software around real-world entities (objects), OOD makes programs easier to understand, maintain, and extend.
+
+Key benefits include:
+
+Reusability, Classes and objects can be reused across different parts of an application.
+
+Maintainability, Changes can be made in one place without breaking the entire system.</p>
+
+ <li>2. In Task 1, we create a static object called AccountType. Explain what this object is used for and how this type of object can help us in software development.</li>
+
+<p>The AccountType object is used as a centralized collection of constant values representing different account types (e.g., Brukskonto, Sparekonto, etc.).
+
+This type of object helps software development by:
+
+Preventing hard-coded strings scattered throughout the code
+
+Reducing typos and inconsistencies
+
+Making updates easier (change the value in one place)
+
+Improving code clarity and meaning
+
+In practice, it works like an enumeration (enum), giving us a reliable set of predefined options.</p>
+
+ <li>3. Discuss why we use encapsulation in classes. Why do we want to "hide" code within our class? Explain how we can create "private" and "public" members in a constructor function.</li>
+
+<p>Encapsulation is used to protect internal data and logic inside a class so that it cannot be accessed or modified incorrectly from outside the object.
+
+We “hide” code to:
+
+Prevent accidental misuse of data
+
+Enforce rules and validation
+
+Reduce dependencies between parts of the program
+
+Make code easier to debug and maintain
+
+In JavaScript constructor functions:
+
+Public members are created using this.propertyName
+
+Private members are created using variables declared with let, const, or var inside the constructor (not attached to this)
+
+Public methods can access private members through closures, but private members cannot be accessed directly from outside the object.</p>
+
+ <li>4. Explain what happens when we use the new command in JavaScript.</li>
+
+<p>When we use the new keyword in JavaScript, the following steps occur:
+
+A new empty object is created
+
+The constructor function is called
+
+this inside the constructor refers to the new object
+
+Properties and methods are attached to the object via this
+
+The new object is returned automatically
+
+basically new creates a new instance of a class or constructor function, allowing multiple objects to be created from the same blueprint.</p>
+      
     </ol>
     <script type="module" src="./task_4-1.mjs" defer></script>
   </body>
