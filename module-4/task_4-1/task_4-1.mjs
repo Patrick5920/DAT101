@@ -2,36 +2,59 @@
 import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+// Print all these types on a single commaseparated line:
+// Get all object values:
+const accountTypeValues = Object.values(AccountTypes);
+
+// Join them in a single string with commas:
+const part1Text = accountTypeValues.join(", ");
+// Print the result:
+printOut(part1Text);
 printOut(newLine);
 
 printOut("--- Part 2 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+
+
+const myAccount = new TBankAccount(AccountTypes.Normal);
+myAccount.setType(AccountTypes.Saving);
+
 printOut(newLine);
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+myAccount.deposit(100);
+myAccount.withdraw(25);
+printOut("My account balance is " + myAccount.getBalance());
+
 printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+myAccount.deposit(25);
+myAccount.withdraw(30);
+myAccount.withdraw(30);
+myAccount.withdraw(30);
+myAccount.withdraw(30);
+myAccount.setType(AccountTypes.Pensjon);
+myAccount.withdraw(30);
+myAccount.setType(AccountTypes.Normal);
+myAccount.withdraw(10);
+
 printOut(newLine);
 
-printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
-printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+myAccount.setCurrencyType(CurrencyTypes.SEK);
+myAccount.setCurrencyType(CurrencyTypes.USD);
+myAccount.setCurrencyType(CurrencyTypes.NOK);
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+myAccount.deposit(12, CurrencyTypes.USD);
+myAccount.withdraw(10, CurrencyTypes.GBP);
+myAccount.setCurrencyType(CurrencyTypes.CAD);
+myAccount.setCurrencyType(CurrencyTypes.INR);
+myAccount.withdraw(150.1585, CurrencyTypes.SEK);
 printOut(newLine);
