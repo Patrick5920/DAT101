@@ -11,6 +11,104 @@
     </div>
     <ol>
       <li>[Write the question here, and copy this for more questions]</li>
+
+1. What is an array?
+
+An array is a data structure that stores multiple values in a single variable, where each value has an index.
+
+2. What does it mean to “hardcode” in programming?
+
+Hardcoding means writing fixed values directly into the code instead of making them configurable or dynamic.
+
+Example:
+
+Hardcoded: "Monday" written directly in many places
+
+Better: store "Monday" once in a variable or object and reuse it
+
+Hardcoding makes programs harder to maintain and update.
+
+3. Explain in plain text what happens in task 3, and how we can traverse the array when we don’t know its length.
+
+In task 3:
+
+A text string is created. The string is split into an array where each word becomes one element.
+
+A loop is used to go through the array.
+
+For each element, we print:
+
+the word number, the index, the word itself. When we don’t know the array length, we use the array’s .length property in a loop. This allows the loop to automatically stop at the last element, no matter how many elements the array contains.
+
+4. Why is it beneficial to store instances of a class in arrays, as in task 4?
+
+Storing class instances in arrays allows us to:
+
+Handle many objects of the same type efficiently
+
+Use loops to perform actions on all objects
+
+Add, remove, search, or sort objects easily
+
+Keep code clean, scalable, and organized
+
+This is especially useful when working with collections like books, users, or products.
+
+5. Explain the EWeekDays object from task 7.
+
+The EWeekDays object works like an enumeration combined with bit flags.
+
+Each weekday has a unique numeric value (powers of two)
+
+The value attribute allows multiple days to be combined using addition
+
+The name attribute stores a readable description
+
+Differences:
+
+WeekDay1–WeekDay7
+Represent individual days (one value each)
+
+Workdays
+A combination of Monday–Friday using added values
+
+Weekends
+A combination of Saturday and Sunday
+
+This setup allows us to
+Combine days, Check if a specific day is included
+Store multiple days in a single number
+
+
+6. Explain how a “callback” routine works when sorting.
+
+A callback function is a function that is passed as an argument to another function and executed by it.
+
+When using .sort(callback):
+JavaScript repeatedly calls the callback
+The callback compares two elements at a time
+
+It returns:
+a negative number → first element comes first. zero → no change
+a positive number → second element comes first
+
+7. What happens in the sorting routines you created?
+
+During sorting:
+
+The array takes two elements at a time
+The callback compares them
+Based on the returned value, the array decides:
+swap them or keep their order
+
+If we print both parameters inside the callback, we can see exactly which values are being compared, helping us understand how the sorting algorithm rearranges the array step by step.
+
+8. In task 10, what does the first element of the array contain?
+
+The first element of the array contains another array, representing the first row.
+
+Each element inside that row array represents a column cell, usually containing text that describes its row and column position.
+      
       <p>[Write your answer here, and copy this for more answers]</p>
     </ol>
     <script type="module" src="./task_4-2.mjs" defer></script>
