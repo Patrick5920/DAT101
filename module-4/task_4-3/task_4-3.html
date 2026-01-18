@@ -97,8 +97,50 @@
   </div>
 </fieldset>
 <ol>
-  <li>[Write the question here, and copy this for more questions]</li>
-  <p>[Write your answer here, and copy this for more answers]</p>
+
+<li>1. How does the DOM help us develop interactive web pages?</li>
+<p>The DOM (Document Object Model) represents a web page as a tree of objects that JavaScript can access and modify.
+ Using the DOM, we can:
+Read and change HTML content and attributes
+Modify CSS styles dynamically
+React to user actions such as clicks, typing, or mouse movement
+This allows web pages to respond to user interaction without reloading, making them interactive and dynamic.</p>
+
+<li>2. What is an event? What happens when we add an event listener to an object?</li>
+<p>An event is something that happens in the browser, such as a mouse click, key press, or page load.
+When we add an event listener to an object:
+The browser “listens” for a specific event on that object
+
+When the event occurs, a callback function is executed
+This function contains the code that should run in response to the event
+In short: an event listener connects user actions to JavaScript behavior.</p>
+
+<li>3. How is the event object structured, and how do we retrieve data from it?</li>
+<p>When an event occurs, the browser automatically creates an event object and passes it to the event handler.
+The event object contains:
+Information about what type of event occurred
+Information about where it occurred
+Data related to the input device used (keyboard, mouse, etc.)
+Keyboard events:
+The event object contains which key was pressed (e.g. key value or key code).
+Mouse events:
+ The event object contains the mouse position (x/y coordinates) and which button was used.
+This allows us to react differently depending on user input details, not just the event itself.</p>
+
+  
+<li>4. What is the main difference between DOM id and DOM name? Can we have identical IDs?</li>
+<p>Main differences:
+id Must be unique within the document
+Used to identify a single specific element
+Commonly accessed with getElementById
+
+name Does not have to be unique
+Often used for grouping elements (especially form inputs)
+Can return multiple elements with the same name
+
+Can we have identical IDs?
+No. IDs must be unique according to HTML standards. Having duplicate IDs can cause unexpected behavior and bugs in JavaScript and CSS.</p>
+  
 </ol>
 <script type="module" src="./task_4-3.mjs" defer></script>
 </body>
